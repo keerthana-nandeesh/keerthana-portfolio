@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>N Keerthana — Student Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
+  body { background:#f5f7fb; color:#1e293b; }
+  
+  /* NAVBAR */
+  nav {
+    position:fixed; top:0; left:0; width:100%;
+    background:white; padding:18px 50px;
+    display:flex; justify-content:space-between; align-items:center;
+    box-shadow:0 4px 20px rgba(0,0,0,0.1);
+    z-index:1000;
+  }
+  nav .logo { font-size:1.4rem; font-weight:700; color:#0f766e; }
+  nav ul { list-style:none; display:flex; gap:30px; }
+  nav ul li a { text-decoration:none; color:#1e293b; font-weight:600; transition:0.3s; }
+  nav ul li a:hover { color:#0f766e; }
+
+  /* SECTIONS */
+  section {
+    min-height:100vh; padding:120px 80px 60px;
+    opacity:0; transform:translateY(40px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  section.visible { opacity:1; transform:translateY(0); }
+
+  /* HOME */
+  #home { display:flex; flex-direction:column; justify-content:center; }
+  #home h1 { font-size:3rem; color:#0f766e; }
+  #home p { font-size:1.2rem; margin-top:10px; color:#475569; }
+
+  /* ABOUT */
+  #about .card {
+    background:white; padding:30px; border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    max-width:800px;
+  }
+  #about p { line-height:1.7; }
+
+  /* SKILLS */
+  #skills .skills-box { display:flex; flex-wrap:wrap; gap:12px; }
+  #skills span {
+    padding:10px 16px; background:#e0f2f1; color:#0f766e;
+    border-radius:8px; font-weight:600;
+  }
+
+  /* PROJECTS */
+  .project-card {
+    background:white; padding:20px; border-radius:14px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+  }
+  .project-card h3 { margin-bottom:6px; }
+
+  /* EDUCATION */
+  .edu-card { margin-bottom:18px; }
+  .edu-card h4 { margin-bottom:4px; }
+  .edu-card .inst { color:#64748b; font-style:italic; }
+
+  /* CONTACT */
+  #contact .info { margin-bottom:10px; font-size:1.1rem; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">N Keerthana</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div style="display:flex;align-items:center;gap:40px;flex-wrap:wrap;">
+    <img src="keerthana1.jpg" alt="Profile Photo" style="width:220px;height:220px;border-radius:50%;object-fit:cover;box-shadow:0 6px 20px rgba(0,0,0,0.2);" />
+    <div>
+  <h1>Hello, I'm N Keerthana</h1>
+  <p>Computer Science Student | Skilled Coder with Strong Work Ethic, Dedication & Sharp Thinking.</p>
+    </div>
+<a href="krtnResume.pdf" download style="
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 22px;
+  background:#0f766e;
+  color:white;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  transition:0.3s;">
+  📄 Download Resume (PDF)
+</a>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+
+    <!-- INTRO -->
+    <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+    <h3 style="margin-top:10px;color:#0f766e;">Who I Am</h3>
+    <p>
+      I am a dedicated Computer Science student who enjoys solving problems through clean, logical,
+      and meaningful code. I approach every task with focus, discipline, and a clear goal‑oriented mindset.
+    </p>
+
+    <!-- BACKGROUND -->
+    <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+    <h3 style="margin-top:10px;color:#0f766e;">Background</h3>
+    <p>
+      My academic journey and project experience have helped me build a clear understanding of how technology
+      can solve real problems. I enjoy learning new concepts, experimenting with tools, and turning ideas into
+      practical, functional solutions.
+    </p>
+
+    <!-- INTERESTS -->
+    <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+    <h3 style="margin-top:10px;color:#0f766e;">Interests</h3>
+    <ul style="margin-left:20px; line-height:1.7;">
+      <li>Designing clean and aesthetic interfaces</li>
+      <li>Exploring new tech & AI tools</li>
+      <li>Creating dashboards & mini‑apps</li>
+      <li>Learning about technology & innovation</li>
+    </ul>
+
+    <!-- WORK ETHIC -->
+    <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+    <h3 style="margin-top:10px;color:#0f766e;">My Work Ethic</h3>
+    <p>
+      I believe in staying consistent, working neatly, and improving a little every day.
+    </p>
+
+    <!-- VISION -->
+    <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+    <h3 style="margin-top:10px;color:#0f766e;">My Vision</h3>
+    <p>
+      My goal is to become a skilled front‑end developer who can create smooth, clean, and user‑friendly interfaces. I want to build meaningful digital experiences using strong design principles and modern web technologies.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <!-- TECHNICAL SKILLS -->
+  <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+  <h3 style="color:#0f766e;">Technical Skills</h3>
+  <div class="skills-box" style="margin-top:10px;">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Java</span>
+    <span>Python</span>
+    <span>C</span>
+    <span>SQL</span>
+  </div>
+
+  <!-- SOFT SKILLS -->
+  <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+  <h3 style="color:#0f766e;">Soft Skills</h3>
+  <div class="skills-box" style="margin-top:10px;">
+    <span>Communication</span>
+    <span>Time Management</span>
+    <span>Team Collaboration</span>
+    <span>Work Ethics</span>
+    <span>Analytical Thinking</span>
+    <span>Adaptability</span>
+  </div>
+
+  <!-- TOOLS & TECHNOLOGIES -->
+  <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+  <h3 style="color:#0f766e;">Tools & Technologies</h3>
+  <div class="skills-box" style="margin-top:10px;">
+    <span>Figma</span>
+    <span>Power BI</span>
+    <span>Git & GitHub</span>
+    <span>VS Code</span>
+    <span>OpenGL</span>
+  </div>
+
+  <!-- AIM TO LEARN -->
+  <hr style="margin:20px 0;border:none;border-top:2px solid #e2e8f0;">
+  <h3 style="color:#0f766e;">Aim to Learn</h3>
+  <div class="skills-box" style="margin-top:10px;">
+    <span>React.js</span>
+    <span>Tailwind CSS</span>
+    <span>Bootstrap</span>
+    <span>Advanced JavaScript</span>
+    <span>UI/UX Design</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Zomato Café Data Analysis</h3>
+    <p>Interactive Power BI dashboard analyzing customer ratings, cuisines, and city trends.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>SecureID Card</h3>
+    <p>Smart card concept for secure handling of identity documents with strong privacy focus.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Sun–Earth–Moon Simulation</h3>
+    <p>3D OpenGL simulation demonstrating celestial movements and rotations.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Research Paper — Impact of Digital Technologies in Modern Engineering</h3>
+    <p>A detailed academic paper analyzing how digital tools such as AI, IoT, and cloud systems influence engineering innovations, methodologies, and productivity. Included literature review and evaluation of multiple reference studies.</p>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div style="display:flex;flex-direction:column;gap:20px;max-width:900px;">
+
+    <!-- B.E CARD -->
+    <div class="edu-card" style="background:white;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.06);border-left:6px solid #0f766e;">
+      <h3 style="margin:0;color:#0f766e;">B.E in Computer Science & Engineering</h3>
+      <div class="inst">Malnad College of Engineering • 2023 – 2027</div>
+      <div style="margin-top:8px;font-weight:600;color:#334155;">CGPA: 8.6</div>
+    </div>
+
+    <!-- PUC CARD -->
+    <div class="edu-card" style="background:white;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.06);border-left:6px solid #3b82f6;">
+      <h3 style="margin:0;color:#3b82f6;">Pre-University Course (PUC)</h3>
+      <div class="inst">Masters PU College • 2021 – 2023</div>
+      <div style="margin-top:8px;font-weight:600;color:#334155;">Percentage: 94.16%</div>
+    </div>
+
+    <!-- SSLC CARD -->
+    <div class="edu-card" style="background:white;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.06);border-left:6px solid #ef4444;">
+      <h3 style="margin:0;color:#ef4444;">Secondary School (SSLC)</h3>
+      <div class="inst">Podar International School • 2021</div>
+      <div style="margin-top:8px;font-weight:600;color:#334155;">Percentage: 90%</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div style="display:flex;flex-wrap:wrap;gap:30px;align-items:flex-start;margin-top:20px;max-width:900px;">
+
+    <!-- LEFT SIDE: CONTACT CARDS -->
+    <div style="flex:1;min-width:260px;display:flex;flex-direction:column;gap:16px;">
+
+      <a href="mailto:krtn.58@gmail.com" style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.06);display:flex;align-items:center;gap:12px;cursor:pointer;">
+          <span style="font-size:1.6rem;">📩</span>
+          <div>
+            <div style="font-weight:600;">Email</div>
+            <div style="color:#475569;">krtn.58@gmail.com</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://www.linkedin.com/in/keerthana-nandeesh" target="_blank" style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.06);display:flex;align-items:center;gap:12px;cursor:pointer;">
+          <span style="font-size:1.6rem;">🔗</span>
+          <div>
+            <div style="font-weight:600;">LinkedIn</div>
+            <div style="color:#475569;">linkedin.com/in/keerthana-nandeesh</div>
+          </div>
+        </div>
+      </a>
+
+      
+
+      <div style="background:white;padding:18px;border-radius:14px;box-shadow:0 6px 20px rgba(0,0,0,0.06);display:flex;align-items:center;gap:12px;">
+        <span style="font-size:1.6rem;">📍</span>
+        <div>
+          <div style="font-weight:600;">Location</div>
+          <div style="color:#475569;">Hassan, Karnataka</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: PRETTY INFO BOX -->
+    <div style="flex:1;min-width:280px;">
+      <div style="background:white;padding:24px;border-radius:16px;box-shadow:0 6px 20px rgba(0,0,0,0.06);">
+        <h3 style="margin-bottom:10px;color:#0f766e;">Let’s Connect!</h3>
+        <p style="color:#475569;margin-bottom:15px;">
+          I’m always open to discussing projects, ideas, collaborations, or anything tech-related.
+          Feel free to reach out using the links on the left.
+        </p>
+
+        <div style="margin-top:20px;font-size:0.95rem;color:#64748b;">
+          Prefer email? Click the email card to open your mail app instantly.<br>
+          Want to explore my work? Visit my GitHub.<br>
+          Want to connect professionally? Check my LinkedIn.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  const sections = document.querySelectorAll('section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+    });
+  }, { threshold:0.2 });
+
+  sections.forEach(sec => observer.observe(sec));
+</script>
+
+
+</body>
+</html>
